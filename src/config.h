@@ -10,10 +10,6 @@
 #endif
 
 
-
-
-
-
 // TTGO T4 2.2in TFT
 #ifdef TFT
 #ifdef T4_V12
@@ -40,7 +36,7 @@
 #ifndef DEFAULT_PASSWORD
 #define DEFAULT_PASSWORD "KateBms"
 #endif
-#ifndef DEFAULT_MQTT_SERVER "192.168.1.5"
+#ifndef DEFAULT_MQTT_SERVER
 #define DEFAULT_MQTT_SERVER "192.168.1.5"
 #endif
 #define CONFIGFILE "/config.json"
