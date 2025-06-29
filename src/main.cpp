@@ -270,6 +270,8 @@ lv_indev_set_read_cb(indev, my_touchpad_read);
 
 lv_obj_t * tabview;
     tabview = lv_tabview_create(lv_screen_active());
+    lv_tabview_set_tab_bar_size(tabview, 40);
+
 
     /*Add 3 tabs (the tabs are page (lv_page) and can be scrolled*/
     lv_obj_t * tab1 = lv_tabview_add_tab(tabview, "Tab 1");
@@ -278,7 +280,7 @@ lv_obj_t * tabview;
 
     lv_obj_t * cont_row = lv_obj_create(tab3 );
     lv_obj_set_size(cont_row, 240, 240);
-    lv_obj_align(cont_row, LV_ALIGN_TOP_MID, 0, 5);
+    lv_obj_align(cont_row, LV_ALIGN_TOP_MID, 0, 0);
     lv_obj_set_flex_flow(cont_row, LV_FLEX_FLOW_COLUMN);
 
 
